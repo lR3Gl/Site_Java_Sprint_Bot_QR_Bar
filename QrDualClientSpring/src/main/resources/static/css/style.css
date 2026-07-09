@@ -1,0 +1,127 @@
+/* ======== BASE ======== */
+body.page {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0b0b0b;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ======== GENERATOR ======== */
+.generator {
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border: 1px solid #bfa14a;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(191, 161, 74, 0.25);
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.generator__title {
+    font-size: 2.2em;
+    color: #f7e9b3;
+    text-shadow: 0 0 10px rgba(191, 161, 74, 0.6);
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+/* ======== CONTROLS ======== */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.controls__input {
+    padding: 12px 15px;
+    width: 50%;
+    border: 1px solid #bfa14a;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.controls__input:focus {
+    border-color: #f5d67a;
+    box-shadow: 0 0 10px rgba(191, 161, 74, 0.6);
+}
+
+.controls__button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #bfa14a;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.controls__button--qr:hover {
+    background-color: #bfa14a;
+    color: #0c0c0c;
+}
+
+.controls__button--barra:hover {
+    background-color: #f5d67a;
+    color: #000;
+}
+
+/* ======== OUTPUTS ======== */
+.outputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.outputs__card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #bfa14a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(191, 161, 74, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outputs__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(191, 161, 74, 0.3);
+}
+
+.outputs__title {
+    color: #f5d67a;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.outputs__image {
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 600px) {
+    .controls__input {
+        width: 100%;
+    }
+
+    .outputs__card {
+        width: 90%;
+    }
+}

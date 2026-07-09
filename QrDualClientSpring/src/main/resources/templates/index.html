@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador Dual de Códigos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page">
+<main class="generator">
+    <h1 class="generator__title">Generador de Códigos QR y de Barras</h1>
+
+    <section class="generator__controls controls">
+        <input
+                id="texto"
+                class="controls__input"
+                type="text"
+                placeholder="Ingresa texto o URL">
+
+        <button
+                class="controls__button controls__button--qr"
+                onclick="generarQr()">
+            Generar QR
+        </button>
+
+        <button
+                class="controls__button controls__button--barra"
+                onclick="generarBarra()">
+            Generar Barra
+        </button>
+    </section>
+
+    <section class="generator__outputs outputs">
+        <article class="outputs__card">
+            <h2 class="outputs__title">Código QR</h2>
+            <img
+                    id="imgQr"
+                    class="outputs__image"
+                    src=""
+                    alt="QR no generado">
+        </article>
+
+        <article class="outputs__card">
+            <h2 class="outputs__title">Código de Barra</h2>
+            <img
+                    id="imgBarra"
+                    class="outputs__image"
+                    src=""
+                    alt="Barra no generada">
+        </article>
+    </section>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
