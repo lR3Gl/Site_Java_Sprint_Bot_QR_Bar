@@ -10,7 +10,7 @@ public class RmiConnector {
             Object obj = Naming.lookup(url);
             return (T) obj;
         } catch (Exception e) {
-            System.err.println("⚠️ No se pudo conectar con el servidor: " + url);
+            System.err.println(" No se pudo conectar con el servidor: " + url);
             e.printStackTrace();
             return null;
         }
