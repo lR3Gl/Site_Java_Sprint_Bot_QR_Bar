@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class QrDualClientApplication {
     public static void main(String[] args) {
         SpringApplication.run(QrDualClientApplication.class, args);
-        System.out.println("🚀 Cliente Spring Boot iniciado en http://localhost:8080");
+        System.out.println("Cliente Spring Boot iniciado en http://localhost:8080");
     }
 }
 
