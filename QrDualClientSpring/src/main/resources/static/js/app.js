@@ -10,7 +10,7 @@ async function generarQr() {
         const blob = await response.blob();
         document.getElementById('imgQr').src = URL.createObjectURL(blob);
     } else {
-        alert('❌ Error al generar el QR');
+        alert(' Error al generar el QR');
     }
 }
 
@@ -26,6 +26,6 @@ async function generarBarra() {
         const blob = await response.blob();
         document.getElementById('imgBarra').src = URL.createObjectURL(blob);
     } else {
-        alert('❌ Error al generar la Barra');
+        alert(' Error al generar la Barra');
     }
 }
